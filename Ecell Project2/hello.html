@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+<main>
+<nav>
+    <div class="left">Prachi's Portfolio</div>
+    <ul id="sidemenu">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about1">About</a></li>
+        <li><a href="#pro">Project</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+        <i  class="fa-solid fa-xmark" onclick="closemenu()"></i>
+    </ul>
+    <i class="fa-solid fa-bars" onclick="openmenu()"></i></nav>
+    <div id="header">
+    <section class="leftsection">
+        Hello,
+        My name is 
+        <div class="mee">Prachi Nagarkar</div>
+        <span id="element"></span>
+
+    </section>
+<section class="rightsection"></section></div>
+/*---------about----------*/
+<div id="about1">
+<div class="about">
+    <div class="row">
+        <div class="col1">
+            <img src="developer.png" alt="">
+        </div>
+        <div class="col2">
+            <h1 class="abtitle">About Me</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt corrupti voluptates reprehenderit error voluptatum dolore odit sint, obcaecati harum ex esse. Deserunt nobis natus consectetur repellat ratione iure voluptate vitae deleniti! Quasi sint nesciunt aut, commodi nihil molestias, at cum rem nisi totam sit modi expedita repellendus assumenda officiis culpa! At, sit. Error qui natus quod et. Nisi odio provident ipsa, tempore amet consequuntur quis.</p>
+        </div>
+    </div>
+</div></div>
+/*---------project----------*/
+<div id="pro">
+<div class="project">
+    <div class="work">
+        <h1 class="protit">My Projects</h1>
+        <div class="worklist">
+            <div class="work">
+            <img src="Screenshot (20).png" >
+        <div class="layer">
+            <h3 class="h3">Understanding Civil Engineering</h3>
+            <p class="para">Learn the basic fundamentals of Civil Engineering to use it daily life</p>
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+        </div></div>
+            <div class="work"><img src="Screenshot (19).png">
+                <div class="layer">
+                    <h3 class="h3">Understanding Rocetry Engineering</h3>
+                    <p class="para">Learn the basic fundamentals of Rocetry Engineering to use it daily life</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div></div>
+            <div class="work"><img  src="Screenshot (18).png">
+                <div class="layer">
+                    <h3 class="h3">Understanding Computer Science Engineering</h3>
+                    <p class="para">Learn the basic fundamentals of Computer Science Engineering to use it daily life</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div></div>
+        </div>
+
+    </div>
+</div></div>
+/*---------Contact----------*/
+<div id="contact">
+    <div class="container">
+        <div class="row"><div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>xyz@gmail.com</p>
+            <p>0123456789</p>
+           <button><a href="#" class="btn">Download CV</a></button>
+        <div class="contact-right">
+            <form>
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            </form>
+        </div>
+    </div>
+</div>
+</main>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('#element', {
+      strings: ['Passionate', 'Dedicated','Assudious'],
+      typeSpeed: 50,
+    });
+  </script>
+  <script>
+    var sidemen = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemen.style.right = "0";
+    }
+    function closemenu(){
+        sidemen.style.right = "-200px";
+    }
+  </script>
+</body>
+<footer>
+    <div class="copyright">
+        <p>Copyright $ Prachi</p>
+    </div>
+</footer>
+</html>
